@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+    
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #fc983a;
+}
+
+nav ul li a:active {
+  color: #fc983a;
+}
+
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#ervaring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center; 
+}
+
+
+
+#ervaring ul{
+  text-align: start;
+  margin-left: 15px;
+}
+
+#projecten{
+}
+.project-container {
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 20px;
+}
+
+.project {
+  text-align: center;
+  width: 45%; 
+}
+
+.project img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.project p {
+  margin-top: 10px; 
+  font-size: 16px;
+}
+
+
+h1, h2 {
+  font-size: 36px;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.contact{
+  text-align: center;
+  
+}
+
+#ervaring section {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+
+.about-me {
+  
+ max-width: 1000px;
+ margin: 0 auto;
+ padding: 20px;
+  
+}
+
+.about-image {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  float: right;
+  margin-left: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+.about-text {
+  
+ font-size: 18px;
+ color: #cccccc;
+ margin-bottom: 20px;
+}
+
+.about-me h1 {
+  margin-bottom: 30px;
+}
+
+.about-text a{
+  text-decoration: none;
+  color: #fc983a;
+}
+
+.about-text a:visited{
+  text-decoration: none;
+  color: #fc983a;
+}
+.about-text a:hover{
+  text-decoration: none;
+  color: #ed6d05;
+
+}
+
+
+.hobby img{
+  height: 400px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+.hobby h1{
+  text-align: center;
+  margin-top: 60px;
+}
+.hobby h2{
+  margin-bottom: 10px;
+}
+.hobby div{
+  margin: 20px;
+}
+
+.hobby li{
+  margin-left: 25px;
+}
+.hobby ul{
+  margin-bottom: 10px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+    
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #fc983a;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #ff6500;
+  color: #1e1e1e;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: left;
+  color: white;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #2e2e2e;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.footer-links a:hover {
+  color: #fc983a;
+}
+
+
