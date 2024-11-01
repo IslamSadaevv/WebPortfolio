@@ -1,45 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Over Mij</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="cv.html">Curriculum Vitae</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobby.html">Hobby's & Interesse</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Over Mij</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand h1 mb-0">Portfolio van Islam</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <main>
-    <section class="about-me">
-      <h1>Over Mij</h1>
-      <img class="about-image" src="images/about.jpg" alt="afbeelding van mij">
-      <p class="about-text">Hallo! Mijn naam is <strong>Islam Sadaev</strong>, een gemotiveerde student met een passie voor webontwikkeling. Ik houd ervan om creatief bezig te zijn en nieuwe technologieën te verkennen.</p>
-      <p class="about-text">Met een achtergrond in design en sterke vaardigheden in HTML en CSS, ben ik altijd op zoek naar manieren om gebruikerservaringen te verbeteren. Mijn doel is om mijn kennis verder uit te breiden en impactvolle projecten te creëren. Bekijk mijn <a href="cv.html">Curriculum Vitae</a> voor meer details over mijn opleidingen en vaardigheden.</p>
-      <p class="about-text">Buiten mijn studie ben ik actief in kickboksen en schaken. Beide hobby's helpen me niet alleen om fit te blijven, maar ook om mijn strategisch denken te verbeteren. Meer over mijn hobby's en interesses kun je vinden op mijn <a href="hobby.html">Hobby's & Interesse</a> pagina.</p>
-      <p class="about-text">Ik geloof in de kracht van leren en persoonlijke groei, en ben altijd op zoek naar nieuwe kansen om mezelf uit te dagen en mijn vaardigheden te ontwikkelen. Kijk ook naar mijn <a href="ervaring.html">Ervaring</a> pagina om te zien wat ik tot nu toe heb bereikt.</p>
-    </section>
-  </main>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About me</a></li>
+              <li class="nav-item"><a href="cv.html" class="nav-link">Curriculum Vitae</a></li>
+              <li class="nav-item"><a href="ervaring.html" class="nav-link">Ervaring</a></li>
+              <li class="nav-item"><a href="hobby.html" class="nav-link">Hobby's & Interesse</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
- <footer>
-    <p>&copy; 2024 Islam Sadaev</p>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/islam-sadaev-432243295/"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:islamsadayev78@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://twitter.com/islamsdvv"><i class="fab fa-twitter"></i></a>
-    </div>
-  </footer>
-</body>
+    <main class="container my-5">
+      <section class="about-me">
+        <h1 class="text-center mb-4">Over Mij</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="images/about.jpg" alt="afbeelding van mij" />
+          </div>
+          <div class="col-md-6">
+            <p class="about-text">
+              Hallo! Mijn naam is <strong>Islam Sadaev</strong>, een gemotiveerde student met een passie voor
+              webontwikkeling. Ik houd ervan om creatief bezig te zijn en nieuwe technologieën te verkennen.
+            </p>
+            <p class="about-text">
+              Met een achtergrond in design en sterke vaardigheden in HTML en CSS, ben ik altijd op zoek naar manieren
+              om gebruikerservaringen te verbeteren. Mijn doel is om mijn kennis verder uit te breiden en impactvolle
+              projecten te creëren. Bekijk mijn <a href="cv.html">Curriculum Vitae</a> voor meer details over mijn
+              opleidingen en vaardigheden.
+            </p>
+            <p class="about-text">
+              Buiten mijn studie ben ik actief in kickboksen en schaken. Beide hobby's helpen me niet alleen om fit te
+              blijven, maar ook om mijn strategisch denken te verbeteren. Meer over mijn hobby's en interesses kun je
+              vinden op mijn <a href="hobby.html">Hobby's & Interesse</a> pagina.
+            </p>
+            <p class="about-text">
+              Ik geloof in de kracht van leren en persoonlijke groei, en ben altijd op zoek naar nieuwe kansen om mezelf
+              uit te dagen en mijn vaardigheden te ontwikkelen. Kijk ook naar mijn
+              <a href="ervaring.html">Ervaring</a> pagina om te zien wat ik tot nu toe heb bereikt.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-3">
+      <p>&copy; 2024 Islam Sadaev</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/islam-sadaev-432243295/" class="me-3"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:islamsadayev78@gmail.com" class="me-3"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/islamsdvv"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybQkO/sV4eI61g64sbEVSTiURFZACV+1hV+kJ2cd3knb3QikN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y6WST5e2kwK/5M8cHB6Uw1h8GgxwHUsvOozpHgZc8imLFeGnQU8p4SDO09IwFyb4"
+      crossorigin="anonymous"></script>
+  </body>
 </html>

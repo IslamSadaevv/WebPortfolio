@@ -1,42 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mijn Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="cv.html">Curriculum Vitae</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobby.html">Hobby's & Interesse</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand h1 mb-0">Portfolio van Islam</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <main>
-    <div class="intro-text">
-      <p>Hey daar,</p>
-      <h1>Mijn naam is Islam Sadaev,<br>Ik ben een Front End Developer.</h1>
-    </div>
-  </main>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About me</a></li>
+              <li class="nav-item"><a href="cv.html" class="nav-link">Curriculum Vitae</a></li>
+              <li class="nav-item"><a href="ervaring.html" class="nav-link">Ervaring</a></li>
+              <li class="nav-item"><a href="hobby.html" class="nav-link">Hobby's & Interesse</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
- <footer>
-    <p>&copy; 2024 Islam Sadaev</p>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/islam-sadaev-432243295/"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:islamsadayev78@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://twitter.com/islamsdvv"><i class="fab fa-twitter"></i></a>
-    </div>
-  </footer>
-</body>
+    <main class="hero-section">
+      <div>
+        <p class="hero-text fw-bold">Hey daar,</p>
+        <h1 class="display-4 fw-bold">Mijn naam is Islam Sadaev,<br />Ik ben een Front End Developer.</h1>
+        <a href="contact.html" class="btn btn-primary mt-3 live">Laten we jouw dromen realiseren!</a>
+      </div>
+    </main>
+
+    <section class="container mt-5">
+      <p class="text-center display-6">Een paar voorbeelden van mijn werk:</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/web2.png" class="card-img-top" alt="Placeholder Image 1" />
+            <div class="card-body">
+              <h5 class="card-title">Elegant Events</h5>
+              <p class="card-text">Een fictionele website voor een trouwfeesten planner met een database.</p>
+              <a href="https://main--fullstack-r0932545.netlify.app/" class="btn btn-primary live">live demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/web1.png" class="card-img-top" alt="Placeholder Image 2" />
+            <div class="card-body">
+              <h5 class="card-title">Starlight cinema</h5>
+              <p class="card-text">Een fictionele website voor een cinema met een database.</p>
+              <a href="https://vermillion-medovik-e53641.netlify.app/" class="btn btn-primary live">live demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/web3.png" class="card-img-top" alt="Placeholder Image 3" />
+            <div class="card-body">
+              <h5 class="card-title">Local guide</h5>
+              <p class="card-text">Een fictionele website voor een Locale guide voor Turnhout. (WIP)</p>
+              <a href="https://islamsadaev.sinners.be/leisure.html" class="btn btn-primary live">live demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Islam Sadaev</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/islam-sadaev-432243295/"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:islamsadayev78@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/islamsdvv"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybQkO/sV4eI61g64sbEVSTiURFZACV+1hV+kJ2cd3knb3QikN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y6WST5e2kwK/5M8cHBW5zXfSCrR4D7pExY+PG49FuIK/z49UVl/y9uU8Mhx1GQ2S"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
