@@ -4,18 +4,14 @@
   box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #1e1e1e;
   color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  
-    
 }
-
 
 header {
   position: absolute;
@@ -23,32 +19,57 @@ header {
   width: 100%;
   padding: 20px 50px;
 }
-
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center; 
+.card {
+  height: 400px;
+}
+.live {
+  color: #1e1e1e;
+  background-color: #fc983a;
+  border: none;
+}
+.live:hover {
+  background-color: #1e1e1e;
+  color: #fc983a;
+    border-color: #ff6500;
+  border: solid 1px;
 }
 
-nav ul li {
+.hero-section {
+  height: 100vh;
+}
+main {
+  margin-top: 100px;
+}
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: #fc983a;
+}
+
+.navbar-nav .nav-item {
   margin-left: 30px;
 }
 
-nav ul li a {
+.navbar-nav .nav-link {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
 
-nav ul li a:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
   color: #fc983a;
 }
 
-nav ul li a:active {
-  color: #fc983a;
+.navbarNav:active {
+  background-color: aqua;
 }
 
+.navbar-toggler {
+  color: white;
+  background-color: white;
+}
 
 main {
   flex-grow: 1;
@@ -64,42 +85,38 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
-
-
-#ervaring ul{
+#ervaring ul {
   text-align: start;
   margin-left: 15px;
 }
 
-#projecten{
-}
 .project-container {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin-top: 20px;
 }
 
 .project {
   text-align: center;
-  width: 45%; 
+  width: 45%;
 }
 
 .project img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 .project p {
-  margin-top: 10px; 
+  margin-top: 10px;
   font-size: 16px;
 }
 
-
-h1, h2 {
+h1,
+h2 {
   font-size: 36px;
   color: white;
 }
@@ -110,9 +127,8 @@ p {
   margin-bottom: 20px;
 }
 
-.contact{
+.contact {
   text-align: center;
-  
 }
 
 #ervaring section {
@@ -120,14 +136,10 @@ p {
   margin-bottom: 20px;
 }
 
-
-
 .about-me {
-  
- max-width: 1000px;
- margin: 0 auto;
- padding: 20px;
-  
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .about-image {
@@ -140,65 +152,61 @@ p {
 }
 
 .about-text {
-  
- font-size: 18px;
- color: #cccccc;
- margin-bottom: 20px;
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 20px;
 }
 
 .about-me h1 {
   margin-bottom: 30px;
 }
 
-.about-text a{
+.about-text a {
   text-decoration: none;
   color: #fc983a;
 }
 
-.about-text a:visited{
+.about-text a:visited {
   text-decoration: none;
   color: #fc983a;
 }
-.about-text a:hover{
+.about-text a:hover {
   text-decoration: none;
   color: #ed6d05;
-
 }
 
-
-.hobby img{
+.hobby img {
   height: 400px;
   width: 400px;
   margin-bottom: 10px;
 }
-.hobby h1{
+.hobby h1 {
   text-align: center;
-  margin-top: 60px;
 }
-.hobby h2{
+.hobby h2 {
   margin-bottom: 10px;
 }
-.hobby div{
+.hobby div {
   margin: 20px;
 }
 
-.hobby li{
+.hobby li {
   margin-left: 25px;
 }
-.hobby ul{
+.hobby ul {
   margin-bottom: 10px;
 }
-
 
 form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
-    
 }
 
-input, textarea {
+input,
+textarea,
+select {
   padding: 15px;
   border: 1px solid #555;
   background-color: #333;
@@ -206,6 +214,16 @@ input, textarea {
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.carousel-img {
+  max-height: 500px;
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 button {
@@ -224,14 +242,15 @@ button:hover {
   color: #1e1e1e;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #555;
   padding: 12px;
   text-align: left;
@@ -246,7 +265,6 @@ th {
 tr:nth-child(even) {
   background-color: #2e2e2e;
 }
-
 
 footer {
   text-align: center;
@@ -272,4 +290,36 @@ footer {
   color: #fc983a;
 }
 
+.navbar-brand {
+  color: white;
+}
 
+@media only screen and (max-width: 991px) {
+  .navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    color: white;
+    background-color: white;
+  }
+  .navbar-toggler {
+    z-index: 1050;
+  }
+}
